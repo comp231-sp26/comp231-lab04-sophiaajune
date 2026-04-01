@@ -35,7 +35,7 @@ wait:
           ldr   r1, =0x3
           str   r1, [r10]
           
-          // check if button pressed
+          // clear edge capture register again 
           ldr   r10, =0xff20005c
           mov   r1, #0xf
           str   r1, [r10]
